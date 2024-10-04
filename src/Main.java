@@ -1,5 +1,7 @@
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -23,6 +25,7 @@ public class Main {
         Rooms n3 = new Rooms("č.3 ", 3,
                 false, true,
                 BigDecimal.valueOf(2400));
+
 
     }
 }
