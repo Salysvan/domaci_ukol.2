@@ -1,3 +1,4 @@
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public class Main {
@@ -13,6 +14,15 @@ public class Main {
         System.out.println(adela.getName() + adela.getLastName() + "(" +
                 adela.getBirthdate() + ").");
 
+        Rooms n1 = new Rooms("č.1 ", 2,
+                true, true,
+                BigDecimal.valueOf(1000));
+        Rooms n2 = new Rooms("č.2 ", 2,
+                true, true,
+                BigDecimal.valueOf(1000));
+        Rooms n3 = new Rooms("č.3 ", 3,
+                false, true,
+                BigDecimal.valueOf(2400));
 
     }
 }
