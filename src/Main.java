@@ -26,6 +26,9 @@ public class Main {
                 false, true,
                 BigDecimal.valueOf(2400));
 
-
+        BookingManager room1 = new BookingManager(
+                "od 19. do 26.7.2021 ", false);
+        BookingManager room3 = new BookingManager(
+                "3 od 1. do 14. 9. 2021", true);
     }
 }
