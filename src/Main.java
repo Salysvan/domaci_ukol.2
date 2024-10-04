@@ -26,7 +26,30 @@ public class Main {
         Rooms n3 = new Rooms("č.3 ", 3,
                 false, true,
                 BigDecimal.valueOf(2400));
-        
+
+        System.out.print("Pokoj " + n1.getRoomNumber());
+        System.out.print(" má " + n1.getNumberOgBeds() + " postel.");
+        System.out.println(" Cena za noc je " + n1.getPrice() + "Kč.");
+        if (n1.coastView && n1.withBalcony){
+            System.out.println("Pokoj je s balkónem s výhledem na moře");
+        }
+
+        System.out.print("Pokoj " + n2.getRoomNumber());
+        System.out.print(" má " + n2.getNumberOgBeds() + " postel.");
+        System.out.println(" Cena za noc je " + n2.getPrice() + "Kč.");
+        if (n2.coastView && n2.withBalcony){
+            System.out.println("Pokoj je s balkónem s výhledem na moře");
+        }
+
+        System.out.print("Pokoj " + n3.getRoomNumber());
+        System.out.print(" má " + n3.getNumberOgBeds() + " postele.");
+        System.out.println(" Cena za noc je " + n3.getPrice() + "Kč.");
+        if (n3.coastView && n3.withBalcony){
+            System.out.println("Pokoj je s balkónem s výhledem na moře");
+        } else {
+            System.out.println("Pokoj je bez balkónu s výhledem na moře");
+        }
+
         BookingManager room1 = new BookingManager(
                 "od 19. do 26.7.2021 ", false);
         BookingManager room3 = new BookingManager(
