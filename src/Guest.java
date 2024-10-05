@@ -34,4 +34,12 @@ public class Guest {
     public void setBirthdate(LocalDate birthdate) {
         this.birthdate = birthdate;
     }
+
+    public Rooms getRoom(Rooms rooms){;
+        return rooms;
+    }
+
+    public void setRooms(Rooms rooms){
+    }
 }
+

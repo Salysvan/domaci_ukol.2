@@ -55,10 +55,19 @@ public class Main {
         BookingManager room3 = new BookingManager(
                 "od 1. do 14. 9. 2021", true);
 
+        adela.setRooms(n1);
+        n1.setReservated(room1);
+
+
+
+
+
         List<BookingManager> reservation = new ArrayList<>();
         reservation.add(room1);
         reservation.add(room3);
         System.out.println(reservation.getFirst().getReservation());
         System.out.println(reservation.getLast().getReservation());
+
+
     }
 }

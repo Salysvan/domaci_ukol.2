@@ -9,6 +9,10 @@ public class BookingManager {
         this.isVacation = isVacation;
     }
 
+    public BookingManager(String reservation) {
+        this(reservation, false);
+    }
+
     public String getReservation() {
         return reservation;
     }
@@ -23,5 +27,19 @@ public class BookingManager {
 
     public void setVacation(boolean vacation) {
         isVacation = vacation;
+    }
+
+    public Rooms getRoom(Rooms rooms){;
+        return rooms;
+    }
+
+    public void setRooms(Rooms rooms){
+    }
+
+    public Guest getGuest(Guest guest){
+        return guest;
+    }
+
+    public void setGuest(Guest guest){
     }
 }
