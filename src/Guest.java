@@ -38,8 +38,5 @@ public class Guest {
     public Rooms getRoom(Rooms rooms){;
         return rooms;
     }
-
-    public void setRooms(Rooms rooms){
-    }
 }
 

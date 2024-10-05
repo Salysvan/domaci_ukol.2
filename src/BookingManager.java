@@ -1,5 +1,3 @@
-import java.time.LocalDate;
-
 public class BookingManager {
     private String reservation;
     private boolean isVacation;
@@ -17,10 +15,6 @@ public class BookingManager {
         return reservation;
     }
 
-    public void setReservation(String reservation) {
-        this.reservation = reservation;
-    }
-
     public boolean isVacation() {
         return isVacation;
     }
@@ -29,17 +23,10 @@ public class BookingManager {
         isVacation = vacation;
     }
 
-    public Rooms getRoom(Rooms rooms){;
-        return rooms;
+    public void addGuest (Guest guest) {
     }
 
-    public void setRooms(Rooms rooms){
+    public void addRoom(Rooms roomNumber) {
     }
 
-    public Guest getGuest(Guest guest){
-        return guest;
-    }
-
-    public void setGuest(Guest guest){
-    }
 }

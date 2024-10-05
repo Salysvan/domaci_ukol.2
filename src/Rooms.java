@@ -54,12 +54,4 @@ public class Rooms {
     public void setPrice(BigDecimal price) {
         this.price = price;
     }
-
-    public BookingManager getReservated(BookingManager bookingManager){
-        return bookingManager;
-    }
-
-    public void setReservated(BookingManager bookingManager){
-
-    }
 }
