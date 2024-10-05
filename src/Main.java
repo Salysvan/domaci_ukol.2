@@ -18,7 +18,7 @@ public class Main {
             String guestAdela = adela.getName() + adela.getLastName() + " (" +
                     adela.getBirthdate() + ")";
         System.out.println(guestAdela);
-        System.out.println(""); // tento řádek má za účel, vytvořit mezeru mezi jednotlivými sekcemi ve výpisu
+        System.out.print("\n");
 
         Rooms n1 = new Rooms("č.1 ", 1,
                 true, true,
@@ -51,7 +51,7 @@ public class Main {
             System.out.println("Pokoj je bez balkónu s výhledem na moře");
         }
 
-        System.out.println("");// tento řádek má za účel, vytvořit mezeru mezi jednotlivými sekcemi ve výpisu
+        System.out.print("\n");
 
         BookingManager reservation1 = new BookingManager(
                 "od 19. do 26.7.2021 ");
@@ -71,7 +71,7 @@ public class Main {
         for (BookingManager booking : reservation){
             System.out.println("Rezervace jsou " + booking.getReservation());
         }
-        System.out.println("");
+        System.out.print("\n");
 
         /* chtěl jsem aby mi cyklus foreach vypsal každou rezervaci
         *  s datem té rezervace, jaký pokoj je zarezervovaný + na jaké jméno
@@ -91,8 +91,5 @@ public class Main {
                 jan.getName() + jan.getLastName() + "na dobu " + reservation2.getReservation());
         System.out.println(reserv1);
         System.out.println(reserv2);
-
-
-
     }
 }

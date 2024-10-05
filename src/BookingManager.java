@@ -28,5 +28,4 @@ public class BookingManager {
 
     public void addRoom(Rooms roomNumber) {
     }
-
 }
