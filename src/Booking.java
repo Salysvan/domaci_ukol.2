@@ -22,6 +22,8 @@ public class Booking {
 
     @Override
     public String toString() {
-        return "Rezervace " + date + " je na ";
+        return "Rezervace " + date + " je na "; // jsem do tohoto bych chtěl dostat i informace
+                                               // jaký pokoj a jaky host patri k tem rezervacim
+                                              // ale to uz si nevim rady
     }
 }
