@@ -53,6 +53,8 @@ public class Main {
         BookingManager bookingManager = new BookingManager();
 
         bookingManager.addbooking(reservation1);
+        bookingManager.addbooking(reservation2);
 
+        bookingManager.displayBookingManager();
     }
 }

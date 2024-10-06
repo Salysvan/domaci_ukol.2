@@ -20,7 +20,8 @@ public class Booking {
         return vacation;
     }
 
-    public Room getRoom(Room room) {
-        return room;
+    @Override
+    public String toString() {
+        return "Rezervace " + date + " je na ";
     }
 }

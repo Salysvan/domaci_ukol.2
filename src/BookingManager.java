@@ -8,4 +8,10 @@ public class BookingManager{
     public void addbooking(Booking booking){
         bookings.add(booking);
     }
+
+    public void displayBookingManager() {
+        for (Booking booking : bookings) {
+            System.out.println(booking.toString());
+        }
+    }
 }
