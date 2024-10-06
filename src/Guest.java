@@ -15,16 +15,8 @@ public class Guest {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getLastName() {
         return lastName;
-    }
-
-    public void setLastName(String lastName) {
-
     }
 
     public LocalDate getBirthdate() {
@@ -33,10 +25,6 @@ public class Guest {
 
     public void setBirthdate(LocalDate birthdate) {
         this.birthdate = birthdate;
-    }
-
-    public Rooms getRoom(Rooms rooms){;
-        return rooms;
     }
 }
 
