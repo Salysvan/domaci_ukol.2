@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -8,11 +9,11 @@ public class Main {
 
     Guest adela = new Guest("Adéla ", "Malíková",
                 LocalDate.of(1993,3, 13));
-    Guest jan = new Guest("Jan ","Dvořáček ",
+    Guest jan = new Guest("Jan ","Dvořáček",
                 LocalDate.of(1995, 5, 5));
-    jan.setBirthdate(LocalDate.of(1955, 4, 5));
+                jan.setBirthdate(LocalDate.of(1955, 4, 5));
 
-            String gusetJan = jan.getName() + jan.getLastName() + "(" +
+            String gusetJan = jan.getName() + jan.getLastName() + " (" +
                     jan.getBirthdate() + ")" + "\n";
             String guestAdela = adela.getName() + adela.getLastName() + " (" +
                     adela.getBirthdate() + ")" + "\n";
@@ -47,14 +48,20 @@ public class Main {
 
         System.out.print("\n");
 
-        Booking reservation1 = new Booking("od 19. do 26.7.2021." , true, n1, adela, adela);
-        Booking reservation2 = new Booking("od 1. do 14.9.2021.", false, n3, jan, jan, adela, adela);
-
         BookingManager bookingManager = new BookingManager();
+        List<Guest> otherGuest = new ArrayList<>();
+        otherGuest.add(adela);
+        otherGuest.add(jan);
 
-        bookingManager.addbooking(reservation1);
+        Booking resrvation1 = new Booking("od 19. do 26.7.2021.", true,
+                n1, adela);
+        Booking reservation2 = new Booking("od 1. do 14.9.2021.", false,
+                n3, jan);
+
+        bookingManager.addbooking(resrvation1);
         bookingManager.addbooking(reservation2);
 
         bookingManager.displayBookingManager();
+
     }
 }
