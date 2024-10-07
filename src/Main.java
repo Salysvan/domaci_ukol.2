@@ -49,17 +49,18 @@ public class Main {
         System.out.print("\n");
 
         BookingManager bookingManager = new BookingManager();
-        List<Guest> otherGuest = new ArrayList<>();
-        otherGuest.add(adela);
-        otherGuest.add(jan);
 
         Booking resrvation1 = new Booking("od 19. do 26.7.2021.", true,
                 n1, adela);
         Booking reservation2 = new Booking("od 1. do 14.9.2021.", false,
                 n3, jan);
 
+        reservation2.setOtherGuest(adela);
+
         bookingManager.addbooking(resrvation1);
         bookingManager.addbooking(reservation2);
+
+
 
         bookingManager.displayBookingManager();
 
